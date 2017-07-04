@@ -1,3 +1,4 @@
+//страница с обработкой аутентификации
 <?php
 session_start();
 
@@ -5,7 +6,14 @@ $credentials = array(
     'admin' => [
         'password'  =>'1234',
         'name'      =>'John',
-        'surname'   =>'Brown'
+        'surname'   =>'Brown',
+        'role'      =>'admin',
+    ],
+    'user'  => [
+        'password'  =>'5678',
+        'name'      =>'Abraam',
+        'surname'   =>'Green',
+        'role'      =>'user',
     ]
 );
 if (isset($_POST['login']) && isset($_POST['password'])) {

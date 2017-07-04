@@ -1,3 +1,4 @@
+//Страница с аутентификацией, задание 1
 <?php
 session_start();
 ?>
@@ -23,6 +24,10 @@ session_start();
 <a href="change-user-info.php">Редактировать данные пользователя</a>
 <a href="protected.php">Для авторизованных пользователей</a>
 <a href="destroy-session.php">Выйти</a>
+<br>
+<a href="stranica-admina.php">Информация для админа</a>
+<a href="stranica-usera.php">Информация для пользователя</a>
+
 
 </body>
 </html>
